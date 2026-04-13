@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Signin Template · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sign-in/">
+
+    <!-- link css bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    <!-- Altera idioma da pagina de login-->
+    <!-- Custom styles for this template -->
+    <link href="signin.css" rel="stylesheet">
+  </head>
+  <body class="text-center">
+    
+<main class="form-signin">
+  <form>
+
+    <!-- <img class="mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"> -->
+    <h1 class="h3 mb-3 fw-normal">Faça o login para continuar</h1>
+
+    <div class="form-floating">
+      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <label for="floatingInput">Informe seu E-mail</label>
+    </div>
+    <div class="form-floating">
+      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+      <label for="floatingPassword">Digite a senha</label>
+    </div>
+
+    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me"> Lembre-me
+      </label>
+    </div>
+    <!-- Botão para entar na tela de login -->
+    <button class="w-100 btn btn-lg btn-primary" type="submit">Entrar</button>
+    <p class="mt-5 mb-3 text-muted">&copy; 2017–2026</p>
+  </form>
+</main>
+
+<!-- Botão FAQ flutuante -->
+<!-- Botão FAQ redondo -->
+<button type="button"
+        data-bs-toggle="modal"
+        data-bs-target="#faqModal"
+        style="
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          border: none;
+          background-color: #0d6efd;
+          color: white;
+          font-size: 28px;
+          font-weight: bold;
+          box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+          z-index: 999;
+          cursor: pointer;
+        ">
+  ?
+</button>
+
+<!-- Modal FAQ -->
+<div class="modal fade" id="faqModal" tabindex="-1" aria-labelledby="faqLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title" id="faqLabel">Perguntas Frequentes</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+
+        <p><strong>🔹 Esqueci minha senha. O que fazer?</strong><br>
+        Clique em "recuperar senha" ou entre em contato com o suporte.</p>
+
+        <p><strong>🔹 Não consigo fazer login.</strong><br>
+        Verifique se o e-mail e a senha estão corretos.</p>
+
+        <p><strong>🔹 Meu acesso foi bloqueado.</strong><br>
+        Aguarde alguns minutos ou fale com o administrador.</p>
+
+        <p><strong>🔹 Posso acessar pelo celular?</strong><br>
+        Sim! O sistema é totalmente responsivo.</p>
+
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Script Bootstrap (necessário para funcionar o modal) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    
+  </body>
+</html>
